@@ -55,21 +55,13 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/twitter
-      # replace with your own tweet link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
+      link:  https://www.facebook.com/shinzx12
       name: Tweet
     - icon: fontawesome/brands/facebook
-      # replace with your own facebook link below
-      link: https://github.com/waynerv/cookiecutter-pypackage
+      link: https://www.facebook.com/shinzx12
       name: Facebook
     - icon: fontawesome/brands/github
       link: https://github.com/shinxz12/sepay
       name: Github
     - icon: material/email
       link: "mailto:ngocbthe@gmail.com"
-  # to enable disqus, uncomment the following and put your disqus id below
-  # disqus: disqus_id
-# uncomment the following and put your google tracking id below to enable GA
-#google_analytics:
-  #- UA-xxx
-  #- auto
