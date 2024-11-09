@@ -1,4 +1,4 @@
-"""Top-level package for se-pay."""
+"""Top-level package for sepay."""
 
 __author__ = """shinxz12"""
 __email__ = 'ngocbthe@gmail.com'

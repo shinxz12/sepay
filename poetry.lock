@@ -479,7 +479,7 @@ files = [
 name = "docutils"
 version = "0.21.2"
 description = "Docutils -- Python Documentation Utilities"
-optional = false
+optional = true
 python-versions = ">=3.9"
 files = [
     {file = "docutils-0.21.2-py3-none-any.whl", hash = "sha256:dafca5b9e384f0e419294eb4d2ff9fa826435bf15f15b7bd45723e8ad76811b2"},
@@ -704,10 +704,10 @@ name = "jinja2"
 version = "3.0.3"
 description = "A very fast and expressive template engine."
 optional = true
-python-versions = ">=3.7"
+python-versions = ">=3.6"
 files = [
-    {file = "jinja2-3.1.4-py3-none-any.whl", hash = "sha256:bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d"},
-    {file = "jinja2-3.1.4.tar.gz", hash = "sha256:4a3aee7acbbe7303aede8e9648d13b8bf88a429282aa6122a993f0ac800cb369"},
+    {file = "Jinja2-3.0.3-py3-none-any.whl", hash = "sha256:077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8"},
+    {file = "Jinja2-3.0.3.tar.gz", hash = "sha256:611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7"},
 ]
 
 [package.dependencies]
@@ -747,20 +747,19 @@ type = ["pygobject-stubs", "pytest-mypy", "shtab", "types-pywin32"]
 
 [[package]]
 name = "markdown"
-version = "3.7"
-description = "Python implementation of John Gruber's Markdown."
+version = "3.3.7"
+description = "Python implementation of Markdown."
 optional = true
-python-versions = ">=3.8"
+python-versions = ">=3.6"
 files = [
-    {file = "Markdown-3.7-py3-none-any.whl", hash = "sha256:7eb6df5690b81a1d7942992c97fad2938e956e79df20cbc6186e9c3a77b1c803"},
-    {file = "markdown-3.7.tar.gz", hash = "sha256:2ae2471477cfd02dbbf038d5d9bc226d40def84b4fe2986e49b59b6b472bbed2"},
+    {file = "Markdown-3.3.7-py3-none-any.whl", hash = "sha256:f5da449a6e1c989a4cea2631aa8ee67caa5a2ef855d551c88f9e309f4634c621"},
+    {file = "Markdown-3.3.7.tar.gz", hash = "sha256:cbb516f16218e643d8e0a95b309f77eb118cb138d39a4f27851e6a63581db874"},
 ]
 
 [package.dependencies]
 importlib-metadata = {version = ">=4.4", markers = "python_version < \"3.10\""}
 
 [package.extras]
-docs = ["mdx-gh-links (>=0.2)", "mkdocs (>=1.5)", "mkdocs-gen-files", "mkdocs-literate-nav", "mkdocs-nature (>=0.6)", "mkdocs-section-index", "mkdocstrings[python]"]
 testing = ["coverage", "pyyaml"]
 
 [[package]]
@@ -856,34 +855,29 @@ files = [
 
 [[package]]
 name = "mkdocs"
-version = "1.6.1"
+version = "1.3.1"
 description = "Project documentation with Markdown."
 optional = true
-python-versions = ">=3.8"
+python-versions = ">=3.6"
 files = [
-    {file = "mkdocs-1.6.1-py3-none-any.whl", hash = "sha256:db91759624d1647f3f34aa0c3f327dd2601beae39a366d6e064c03468d35c20e"},
-    {file = "mkdocs-1.6.1.tar.gz", hash = "sha256:7b432f01d928c084353ab39c57282f29f92136665bdd6abf7c1ec8d822ef86f2"},
+    {file = "mkdocs-1.3.1-py3-none-any.whl", hash = "sha256:fda92466393127d2da830bc6edc3a625a14b436316d1caf347690648e774c4f0"},
+    {file = "mkdocs-1.3.1.tar.gz", hash = "sha256:a41a2ff25ce3bbacc953f9844ba07d106233cd76c88bac1f59cb1564ac0d87ed"},
 ]
 
 [package.dependencies]
-click = ">=7.0"
-colorama = {version = ">=0.4", markers = "platform_system == \"Windows\""}
+click = ">=3.3"
 ghp-import = ">=1.0"
-importlib-metadata = {version = ">=4.4", markers = "python_version < \"3.10\""}
-jinja2 = ">=2.11.1"
-markdown = ">=3.3.6"
-markupsafe = ">=2.0.1"
+importlib-metadata = ">=4.3"
+Jinja2 = ">=2.10.2"
+Markdown = ">=3.2.1,<3.4"
 mergedeep = ">=1.3.4"
-mkdocs-get-deps = ">=0.2.0"
 packaging = ">=20.5"
-pathspec = ">=0.11.1"
-pyyaml = ">=5.1"
+PyYAML = ">=3.10"
 pyyaml-env-tag = ">=0.1"
 watchdog = ">=2.0"
 
 [package.extras]
 i18n = ["babel (>=2.9.0)"]
-min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-import (==1.0)", "importlib-metadata (==4.4)", "jinja2 (==2.11.1)", "markdown (==3.3.6)", "markupsafe (==2.0.1)", "mergedeep (==1.3.4)", "mkdocs-get-deps (==0.2.0)", "packaging (==20.5)", "pathspec (==0.11.1)", "pyyaml (==5.1)", "pyyaml-env-tag (==0.1)", "watchdog (==2.0)"]
 
 [[package]]
 name = "mkdocs-autorefs"
@@ -899,23 +893,6 @@ files = [
 [package.dependencies]
 Markdown = ">=3.3,<4.0"
 mkdocs = ">=1.1,<2.0"
-
-[[package]]
-name = "mkdocs-get-deps"
-version = "0.2.0"
-description = "MkDocs extension that lists all dependencies according to a mkdocs.yml file"
-optional = true
-python-versions = ">=3.8"
-files = [
-    {file = "mkdocs_get_deps-0.2.0-py3-none-any.whl", hash = "sha256:2bf11d0b133e77a0dd036abeeb06dec8775e46efa526dc70667d8863eefc6134"},
-    {file = "mkdocs_get_deps-0.2.0.tar.gz", hash = "sha256:162b3d129c7fad9b19abfdcb9c1458a651628e4b1dea628ac68790fb3061c60c"},
-]
-
-[package.dependencies]
-importlib-metadata = {version = ">=4.3", markers = "python_version < \"3.10\""}
-mergedeep = ">=1.3.4"
-platformdirs = ">=2.2.0"
-pyyaml = ">=5.1"
 
 [[package]]
 name = "mkdocs-include-markdown-plugin"
@@ -1375,17 +1352,14 @@ files = [
 
 [[package]]
 name = "pygments"
-version = "2.18.0"
+version = "2.11.2"
 description = "Pygments is a syntax highlighting package written in Python."
 optional = true
-python-versions = ">=3.8"
+python-versions = ">=3.5"
 files = [
-    {file = "pygments-2.18.0-py3-none-any.whl", hash = "sha256:b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a"},
-    {file = "pygments-2.18.0.tar.gz", hash = "sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199"},
+    {file = "Pygments-2.11.2-py3-none-any.whl", hash = "sha256:44238f1b60a76d78fc8ca0528ee429702aae011c265fe6a8dd8b63049ae41c65"},
+    {file = "Pygments-2.11.2.tar.gz", hash = "sha256:4e426f72023d88d03b2fa258de560726ce890ff3b630f88c21cbb8b2503b8c6a"},
 ]
-
-[package.extras]
-windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
 name = "pymdown-extensions"
@@ -1880,10 +1854,10 @@ type = ["pytest-mypy"]
 
 [extras]
 dev = ["bump2version", "pip", "pre-commit", "toml", "tox", "twine", "virtualenv"]
-doc = ["mkdocs", "mkdocs-autorefs", "mkdocs-include-markdown-plugin", "mkdocs-material", "mkdocstrings"]
+doc = ["jinja2", "mkdocs", "mkdocs-autorefs", "mkdocs-include-markdown-plugin", "mkdocs-material", "mkdocstrings", "pygments"]
 test = ["black", "flake8", "flake8-docstrings", "isort", "mypy", "pytest", "pytest-cov"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4.0"
-content-hash = "23320587ac4aecdbe1fa36de6d9a83ba187509a4d227d9630c0fac8d78da2bf3"
+content-hash = "ac0eb87afd8ca1a9e27ad84ce48739006546f740e6750179cdc48e00ef12ba6f"

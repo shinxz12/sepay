@@ -1,1 +1,1 @@
-::: se-pay
+::: sepay
