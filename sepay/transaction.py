@@ -1,13 +1,11 @@
 from typing import Dict, List, Optional, TypeVar
 
 from .base import BaseRequest
-from .models import TransactionModel
-
-FiltersType = TypeVar('FiltersType', bound=TransactionModel)
+from .models import Transaction
 
 
-class Transaction(BaseRequest):
-    def get_transactions(self, filters: Optional[Dict[str, str]] = None) -> List[TransactionModel]:
+class TransactionService(BaseRequest):
+    def get_transactions(self, filters: Optional[Dict[str, str]] = None) -> List[Transaction]:
         """
         Example usage:
 
@@ -57,16 +55,16 @@ class Transaction(BaseRequest):
         data = self._get(path, params=params)
         transactions = data.get("transactions", [])
 
-        return [self.get_object(TransactionModel, transaction) for transaction in transactions]
+        return [self.get_object(Transaction, transaction) for transaction in transactions]
 
-    def get_transaction(self, transaction_id: str) -> TransactionModel:
+    def get_transaction(self, transaction_id: str) -> Transaction:
         """
         Returns the details of a transaction_id.
         """
         path = "transactions/details/{}".format(transaction_id)
         data = self._get(path)
 
-        return self.get_object(TransactionModel, data["transaction"])
+        return self.get_object(Transaction, data["transaction"])
 
     def get_count(self, filters: Optional[Dict[str, str]] = None) -> int:
         """

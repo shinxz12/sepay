@@ -1,9 +1,9 @@
-from typing import List, Literal, Optional
+from typing import Optional
 
 from pydantic import BaseModel
 
 
-class TransactionModel(BaseModel):
+class Transaction(BaseModel):
     id: str
     bank_brand_name: str
     account_number: str

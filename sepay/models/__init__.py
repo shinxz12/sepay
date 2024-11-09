@@ -1,2 +1,2 @@
-from .bank_account_model import BankAccountModel
-from .transaction_model import TransactionModel
+from .bank_account_model import BankAccount
+from .transaction_model import Transaction

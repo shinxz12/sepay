@@ -1,14 +1,14 @@
 from typing import Dict, List, Optional
 
 from .base import BaseRequest
-from .models import BankAccountModel
+from .models import BankAccount
 
 
-class BankAccount(BaseRequest):
+class BankAccountService(BaseRequest):
     def get_bank_accounts(
         self,
         filters: Optional[Dict[str, str]] = None,
-    ) -> List[BankAccountModel]:
+    ) -> List[BankAccount]:
         """
         Example usage:
 
@@ -55,16 +55,16 @@ class BankAccount(BaseRequest):
         data = self._get(path, params=params)
         bank_accounts = data.get("bankaccounts", [])
 
-        return [self.get_object(BankAccountModel, transaction) for transaction in bank_accounts]
+        return [self.get_object(BankAccount, transaction) for transaction in bank_accounts]
 
-    def get_bank_account(self, transaction_id: str) -> BankAccountModel:
+    def get_bank_account(self, transaction_id: str) -> BankAccount:
         """
         Returns the details of a transaction_id.
         """
         path = "bankaccounts/details/{}".format(transaction_id)
         data = self._get(path)
 
-        return self.get_object(BankAccountModel, data["bankaccount"])
+        return self.get_object(BankAccount, data["bankaccount"])
 
     def get_count(self, filters: Optional[Dict[str, str]] = None) -> int:
         """
