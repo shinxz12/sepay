@@ -1,5 +1,5 @@
 import os
-from typing import Any, Literal, Optional
+from typing import Any, Literal, Optional, Type
 
 import requests
 from pydantic import BaseModel
@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 class APIKey:
     def __init__(self, api_key: Optional[str] = None) -> None:
-        self._api_key = api_key or os.getenv("SEPAY_API_KEY")
+        self._api_key = api_key or os.getenv("SEPAY_API_KEY") or ""
         if not self._api_key:
             raise ValueError("Missing API Key.")
 
@@ -23,9 +23,9 @@ class BaseRequest(APIKey):
             self.url = response.request.url
             self.exception_message = f"""
                 Request: {self.method} {self.url}:
-                    {self.request_body}
+                    {self.request_body!r}
                 Response: {self.status_code}
-                    {response.text}
+                    {response.text!r}
             """
             super().__init__(self.exception_message)
 
@@ -93,5 +93,5 @@ class BaseRequest(APIKey):
     ) -> dict[Any, Any]:
         return self._make_request("DELETE", path, body, params)
 
-    def get_object(self, object_class: BaseModel, data: dict):
+    def get_object(self, object_class: Type[BaseModel], data: dict):
         return object_class.model_validate(data)
