@@ -1,0 +1,2516 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://shinxz12.github.io/sepay/api/">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-6.2.8">
+    
+    
+      
+        <title>Modules - sepay</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="indigo" data-md-color-accent="indigo">
+      
+        <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sepay" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://shinxz12.github.io/sepay/" title="sepay" class="md-header-nav__button md-logo" aria-label="sepay">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            sepay
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Modules
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/shinxz12/sepay" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shinxz12/sepay
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://shinxz12.github.io/sepay/" title="sepay" class="md-nav__button md-logo" aria-label="sepay">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    sepay
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/shinxz12/sepay" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    shinxz12/sepay
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        Usage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Modules
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sepay" class="md-nav__link">
+    sepay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.bank_account" class="md-nav__link">
+    bank_account
+  </a>
+  
+    <nav class="md-nav" aria-label="bank_account">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService" class="md-nav__link">
+    BankAccountService
+  </a>
+  
+    <nav class="md-nav" aria-label="BankAccountService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_bank_account" class="md-nav__link">
+    get_bank_account()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_bank_accounts" class="md-nav__link">
+    get_bank_accounts()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_count" class="md-nav__link">
+    get_count()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.models" class="md-nav__link">
+    models
+  </a>
+  
+    <nav class="md-nav" aria-label="models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model" class="md-nav__link">
+    bank_account_model
+  </a>
+  
+    <nav class="md-nav" aria-label="bank_account_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount" class="md-nav__link">
+    BankAccount
+  </a>
+  
+    <nav class="md-nav" aria-label="BankAccount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__class_vars__" class="md-nav__link">
+    __class_vars__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__private_attributes__" class="md-nav__link">
+    __private_attributes__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_complete__" class="md-nav__link">
+    __pydantic_complete__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_custom_init__" class="md-nav__link">
+    __pydantic_custom_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_decorators__" class="md-nav__link">
+    __pydantic_decorators__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_generic_metadata__" class="md-nav__link">
+    __pydantic_generic_metadata__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_parent_namespace__" class="md-nav__link">
+    __pydantic_parent_namespace__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_post_init__" class="md-nav__link">
+    __pydantic_post_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__signature__" class="md-nav__link">
+    __signature__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_computed_fields" class="md-nav__link">
+    model_computed_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_config" class="md-nav__link">
+    model_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_fields" class="md-nav__link">
+    model_fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model" class="md-nav__link">
+    transaction_model
+  </a>
+  
+    <nav class="md-nav" aria-label="transaction_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction" class="md-nav__link">
+    Transaction
+  </a>
+  
+    <nav class="md-nav" aria-label="Transaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__class_vars__" class="md-nav__link">
+    __class_vars__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__private_attributes__" class="md-nav__link">
+    __private_attributes__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_complete__" class="md-nav__link">
+    __pydantic_complete__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_custom_init__" class="md-nav__link">
+    __pydantic_custom_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_decorators__" class="md-nav__link">
+    __pydantic_decorators__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_generic_metadata__" class="md-nav__link">
+    __pydantic_generic_metadata__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_parent_namespace__" class="md-nav__link">
+    __pydantic_parent_namespace__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_post_init__" class="md-nav__link">
+    __pydantic_post_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__signature__" class="md-nav__link">
+    __signature__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_computed_fields" class="md-nav__link">
+    model_computed_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_config" class="md-nav__link">
+    model_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_fields" class="md-nav__link">
+    model_fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.transaction" class="md-nav__link">
+    transaction
+  </a>
+  
+    <nav class="md-nav" aria-label="transaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService" class="md-nav__link">
+    TransactionService
+  </a>
+  
+    <nav class="md-nav" aria-label="TransactionService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_count" class="md-nav__link">
+    get_count()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_transaction" class="md-nav__link">
+    get_transaction()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_transactions" class="md-nav__link">
+    get_transactions()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sepay" class="md-nav__link">
+    sepay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.bank_account" class="md-nav__link">
+    bank_account
+  </a>
+  
+    <nav class="md-nav" aria-label="bank_account">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService" class="md-nav__link">
+    BankAccountService
+  </a>
+  
+    <nav class="md-nav" aria-label="BankAccountService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_bank_account" class="md-nav__link">
+    get_bank_account()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_bank_accounts" class="md-nav__link">
+    get_bank_accounts()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.bank_account.BankAccountService.get_count" class="md-nav__link">
+    get_count()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.models" class="md-nav__link">
+    models
+  </a>
+  
+    <nav class="md-nav" aria-label="models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model" class="md-nav__link">
+    bank_account_model
+  </a>
+  
+    <nav class="md-nav" aria-label="bank_account_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount" class="md-nav__link">
+    BankAccount
+  </a>
+  
+    <nav class="md-nav" aria-label="BankAccount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__class_vars__" class="md-nav__link">
+    __class_vars__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__private_attributes__" class="md-nav__link">
+    __private_attributes__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_complete__" class="md-nav__link">
+    __pydantic_complete__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_custom_init__" class="md-nav__link">
+    __pydantic_custom_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_decorators__" class="md-nav__link">
+    __pydantic_decorators__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_generic_metadata__" class="md-nav__link">
+    __pydantic_generic_metadata__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_parent_namespace__" class="md-nav__link">
+    __pydantic_parent_namespace__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__pydantic_post_init__" class="md-nav__link">
+    __pydantic_post_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.__signature__" class="md-nav__link">
+    __signature__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_computed_fields" class="md-nav__link">
+    model_computed_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_config" class="md-nav__link">
+    model_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.bank_account_model.BankAccount.model_fields" class="md-nav__link">
+    model_fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model" class="md-nav__link">
+    transaction_model
+  </a>
+  
+    <nav class="md-nav" aria-label="transaction_model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction" class="md-nav__link">
+    Transaction
+  </a>
+  
+    <nav class="md-nav" aria-label="Transaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__class_vars__" class="md-nav__link">
+    __class_vars__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__private_attributes__" class="md-nav__link">
+    __private_attributes__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_complete__" class="md-nav__link">
+    __pydantic_complete__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_custom_init__" class="md-nav__link">
+    __pydantic_custom_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_decorators__" class="md-nav__link">
+    __pydantic_decorators__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_generic_metadata__" class="md-nav__link">
+    __pydantic_generic_metadata__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_parent_namespace__" class="md-nav__link">
+    __pydantic_parent_namespace__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__pydantic_post_init__" class="md-nav__link">
+    __pydantic_post_init__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.__signature__" class="md-nav__link">
+    __signature__
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_computed_fields" class="md-nav__link">
+    model_computed_fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_config" class="md-nav__link">
+    model_config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.models.transaction_model.Transaction.model_fields" class="md-nav__link">
+    model_fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepay.transaction" class="md-nav__link">
+    transaction
+  </a>
+  
+    <nav class="md-nav" aria-label="transaction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService" class="md-nav__link">
+    TransactionService
+  </a>
+  
+    <nav class="md-nav" aria-label="TransactionService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_count" class="md-nav__link">
+    get_count()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_transaction" class="md-nav__link">
+    get_transaction()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sepay.transaction.TransactionService.get_transactions" class="md-nav__link">
+    get_transactions()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/shinxz12/sepay/edit/master/docs/api.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Modules</h1>
+                
+                <div class="doc doc-object doc-module">
+
+<a id="sepay"></a>
+    <div class="doc doc-contents first">
+
+      <p>Top-level package for se-pay.</p>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="sepay.bank_account" class="doc doc-heading">
+        <code>bank_account</code>
+
+
+
+<a href="#sepay.bank_account" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h3 id="sepay.bank_account.BankAccountService" class="doc doc-heading">
+        <code>BankAccountService</code>
+
+
+
+<a href="#sepay.bank_account.BankAccountService" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.bank_account.BankAccountService.get_bank_account" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_bank_account</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">)</span></code>
+
+
+<a href="#sepay.bank_account.BankAccountService.get_bank_account" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Returns the details of a transaction_id.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/bank_account.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_bank_account</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BankAccount</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the details of a transaction_id.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;bankaccounts/details/</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">transaction_id</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">BankAccount</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;bankaccount&quot;</span><span class="p">])</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.bank_account.BankAccountService.get_bank_accounts" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_bank_accounts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+<a href="#sepay.bank_account.BankAccountService.get_bank_accounts" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;account_number&quot;</span><span class="p">:</span> <span class="s2">&quot;123456789&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transaction_date_min&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;amount_in&quot;</span><span class="p">:</span> <span class="s2">&quot;100.00&quot;</span>
+<span class="p">}</span>
+<span class="n">bank_accounts</span> <span class="o">=</span> <span class="n">bank_accounts</span><span class="o">.</span><span class="n">get_bank_accounts</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+</code></pre></div>
+<p>Retrieve a list of bank_account. You can filter the results using the following parameters
+either directly as method arguments or through the <code>filters</code> dictionary:</p>
+<ul>
+<li>
+<p><strong>short_name</strong>:
+The name of the bank (short name) to filter accounts.</p>
+</li>
+<li>
+<p><strong>last_transaction_date_min</strong>:
+Filter accounts with the most recent transaction date on or after this date (&gt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>last_transaction_date_max</strong>:
+Filter accounts with the most recent transaction date on or before this date (&lt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>since_id</strong>:
+Show bank accounts starting from the specified ID (&gt;=).</p>
+</li>
+<li>
+<p><strong>limit</strong>:
+Limit the number of bank accounts returned. Defaults to 100.</p>
+</li>
+<li>
+<p><strong>accumulated_min</strong>:
+Filter bank accounts with a balance greater than or equal to this amount (&gt;=).</p>
+</li>
+<li>
+<p><strong>accumulated_max</strong>:
+Filter bank accounts with a balance less than or equal to this amount (&gt;=).</p>
+</li>
+</ul>
+<p>The <code>filters</code> dictionary can include any of the parameters listed above. You can use either
+individual parameters or the <code>filters</code> dictionary to customize your query.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/bank_account.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_bank_accounts</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">filters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">BankAccount</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example usage:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    filters = {</span>
+<span class="sd">        &quot;account_number&quot;: &quot;123456789&quot;,</span>
+<span class="sd">        &quot;transaction_date_min&quot;: &quot;2023-01-01&quot;,</span>
+<span class="sd">        &quot;amount_in&quot;: &quot;100.00&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    bank_accounts = bank_accounts.get_bank_accounts(filters=filters)</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    Retrieve a list of bank_account. You can filter the results using the following parameters</span>
+<span class="sd">    either directly as method arguments or through the `filters` dictionary:</span>
+
+<span class="sd">    - **short_name**:</span>
+<span class="sd">    The name of the bank (short name) to filter accounts.</span>
+
+<span class="sd">    - **last_transaction_date_min**:</span>
+<span class="sd">    Filter accounts with the most recent transaction date on or after this date (&gt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **last_transaction_date_max**:</span>
+<span class="sd">    Filter accounts with the most recent transaction date on or before this date (&lt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **since_id**:</span>
+<span class="sd">    Show bank accounts starting from the specified ID (&gt;=).</span>
+
+<span class="sd">    - **limit**:</span>
+<span class="sd">    Limit the number of bank accounts returned. Defaults to 100.</span>
+
+<span class="sd">    - **accumulated_min**:</span>
+<span class="sd">    Filter bank accounts with a balance greater than or equal to this amount (&gt;=).</span>
+
+<span class="sd">    - **accumulated_max**:</span>
+<span class="sd">    Filter bank accounts with a balance less than or equal to this amount (&gt;=).</span>
+
+<span class="sd">    The `filters` dictionary can include any of the parameters listed above. You can use either</span>
+<span class="sd">    individual parameters or the `filters` dictionary to customize your query.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;bankaccounts/list&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="n">filters</span> <span class="ow">or</span> <span class="p">{}</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="n">bank_accounts</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;bankaccounts&quot;</span><span class="p">,</span> <span class="p">[])</span>
+
+    <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">BankAccount</span><span class="p">,</span> <span class="n">transaction</span><span class="p">)</span> <span class="k">for</span> <span class="n">transaction</span> <span class="ow">in</span> <span class="n">bank_accounts</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.bank_account.BankAccountService.get_count" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+<a href="#sepay.bank_account.BankAccountService.get_count" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;since_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1000&quot;</span>
+<span class="p">}</span>
+<span class="n">count</span> <span class="o">=</span> <span class="n">bank_account</span><span class="o">.</span><span class="n">get_count</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+</code></pre></div>
+<p>Retrieve the count of bank_account based on the specified filters. You can filter the results
+using the <code>filters</code> dictionary, which can include the following parameters:</p>
+<ul>
+<li>
+<p><strong>short_name</strong>:
+The name of the bank, corresponding to the short name field.</p>
+</li>
+<li>
+<p><strong>last_transaction_date_min</strong>:
+Filter accounts with the most recent transaction date on or after this date (&gt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>last_transaction_date_max</strong>:
+Filter accounts with the most recent transaction date on or before this date (&lt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>since_id</strong>:
+Show bank accounts starting from the specified ID (&gt;=).</p>
+</li>
+<li>
+<p><strong>accumulated_min</strong>:
+Filter bank accounts with a balance greater than or equal to this amount (&gt;=).</p>
+</li>
+<li>
+<p><strong>accumulated_max</strong>:
+Filter bank accounts with a balance less than or equal to this amount (&lt;=).</p>
+</li>
+</ul>
+<p>The <code>filters</code> dictionary allows you to customize your query by including any combination
+of the parameters listed above.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/bank_account.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example usage:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    filters = {</span>
+<span class="sd">        &quot;since_id&quot;: &quot;1000&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    count = bank_account.get_count(filters=filters)</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    Retrieve the count of bank_account based on the specified filters. You can filter the results</span>
+<span class="sd">    using the `filters` dictionary, which can include the following parameters:</span>
+
+<span class="sd">    - **short_name**:</span>
+<span class="sd">    The name of the bank, corresponding to the short name field.</span>
+
+<span class="sd">    - **last_transaction_date_min**:</span>
+<span class="sd">    Filter accounts with the most recent transaction date on or after this date (&gt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **last_transaction_date_max**:</span>
+<span class="sd">    Filter accounts with the most recent transaction date on or before this date (&lt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **since_id**:</span>
+<span class="sd">    Show bank accounts starting from the specified ID (&gt;=).</span>
+
+<span class="sd">    - **accumulated_min**:</span>
+<span class="sd">    Filter bank accounts with a balance greater than or equal to this amount (&gt;=).</span>
+
+<span class="sd">    - **accumulated_max**:</span>
+<span class="sd">    Filter bank accounts with a balance less than or equal to this amount (&lt;=).</span>
+
+<span class="sd">    The `filters` dictionary allows you to customize your query by including any combination</span>
+<span class="sd">    of the parameters listed above.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;bankaccounts/count&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="n">filters</span> <span class="ow">or</span> <span class="p">{}</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;count_bankaccounts&quot;</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="sepay.models" class="doc doc-heading">
+        <code>models</code>
+
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="sepay.models.bank_account_model" class="doc doc-heading">
+        <code>bank_account_model</code>
+
+
+
+<a href="#sepay.models.bank_account_model" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h4 id="sepay.models.bank_account_model.BankAccount" class="doc doc-heading">
+        <code>BankAccount</code>
+
+
+
+<a href="#sepay.models.bank_account_model.BankAccount" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__class_vars__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__class_vars__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__class_vars__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The names of the class variables defined on the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__private_attributes__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__private_attributes__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__private_attributes__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata about the private attributes of the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_complete__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_complete__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_complete__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Whether model building is completed, or if there are still undefined fields.</p>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_custom_init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_custom_init__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_custom_init__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Whether the model has a custom <code>__init__</code> method.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_decorators__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_decorators__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_decorators__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata containing the decorators defined on the model.
+This replaces <code>Model.__validators__</code> and <code>Model.__root_validators__</code> from Pydantic V1.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_generic_metadata__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_generic_metadata__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_generic_metadata__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata for generic models; contains data used for a similar purpose to
+<strong>args</strong>, <strong>origin</strong>, <strong>parameters</strong> in typing-module generics. May eventually be replaced by these.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_parent_namespace__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_parent_namespace__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_parent_namespace__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__pydantic_post_init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_post_init__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__pydantic_post_init__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The name of the post-init method for the model, if defined.</p>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.__signature__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__signature__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.bank_account_model.BankAccount.__signature__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The synthesized <code>__init__</code> [<code>Signature</code>][inspect.Signature] of the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.model_computed_fields" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_computed_fields</span></code>
+
+
+<a href="#sepay.models.bank_account_model.BankAccount.model_computed_fields" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>A dictionary of computed field names and their corresponding <code>ComputedFieldInfo</code> objects.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.model_config" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_config</span></code>
+
+
+<a href="#sepay.models.bank_account_model.BankAccount.model_config" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.bank_account_model.BankAccount.model_fields" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_fields</span></code>
+
+
+<a href="#sepay.models.bank_account_model.BankAccount.model_fields" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata about the fields defined on the model,
+mapping of field names to [<code>FieldInfo</code>][pydantic.fields.FieldInfo] objects.</p>
+<p>This replaces <code>Model.__fields__</code> from Pydantic V1.</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h3 id="sepay.models.transaction_model" class="doc doc-heading">
+        <code>transaction_model</code>
+
+
+
+<a href="#sepay.models.transaction_model" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h4 id="sepay.models.transaction_model.Transaction" class="doc doc-heading">
+        <code>Transaction</code>
+
+
+
+<a href="#sepay.models.transaction_model.Transaction" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__class_vars__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__class_vars__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__class_vars__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The names of the class variables defined on the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__private_attributes__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__private_attributes__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__private_attributes__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata about the private attributes of the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_complete__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_complete__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_complete__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Whether model building is completed, or if there are still undefined fields.</p>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_custom_init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_custom_init__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_custom_init__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Whether the model has a custom <code>__init__</code> method.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_decorators__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_decorators__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_decorators__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata containing the decorators defined on the model.
+This replaces <code>Model.__validators__</code> and <code>Model.__root_validators__</code> from Pydantic V1.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_generic_metadata__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_generic_metadata__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_generic_metadata__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata for generic models; contains data used for a similar purpose to
+<strong>args</strong>, <strong>origin</strong>, <strong>parameters</strong> in typing-module generics. May eventually be replaced by these.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_parent_namespace__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_parent_namespace__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_parent_namespace__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Parent namespace of the model, used for automatic rebuilding of models.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__pydantic_post_init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__pydantic_post_init__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__pydantic_post_init__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The name of the post-init method for the model, if defined.</p>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.__signature__" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">__signature__</span></code>
+
+  <span class="doc doc-properties">
+      <small class="doc doc-property doc-property-special"><code>special</code></small>
+  </span>
+
+<a href="#sepay.models.transaction_model.Transaction.__signature__" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>The synthesized <code>__init__</code> [<code>Signature</code>][inspect.Signature] of the model.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.model_computed_fields" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_computed_fields</span></code>
+
+
+<a href="#sepay.models.transaction_model.Transaction.model_computed_fields" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>A dictionary of computed field names and their corresponding <code>ComputedFieldInfo</code> objects.</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.model_config" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_config</span></code>
+
+
+<a href="#sepay.models.transaction_model.Transaction.model_config" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Configuration for the model, should be a dictionary conforming to [<code>ConfigDict</code>][pydantic.config.ConfigDict].</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="sepay.models.transaction_model.Transaction.model_fields" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">model_fields</span></code>
+
+
+<a href="#sepay.models.transaction_model.Transaction.model_fields" class="headerlink" title="Permanent link">&para;</a></h5>
+
+    <div class="doc doc-contents ">
+
+      <p>Metadata about the fields defined on the model,
+mapping of field names to [<code>FieldInfo</code>][pydantic.fields.FieldInfo] objects.</p>
+<p>This replaces <code>Model.__fields__</code> from Pydantic V1.</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="doc doc-object doc-module">
+
+
+
+<h2 id="sepay.transaction" class="doc doc-heading">
+        <code>transaction</code>
+
+
+
+<a href="#sepay.transaction" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-class">
+
+
+
+<h3 id="sepay.transaction.TransactionService" class="doc doc-heading">
+        <code>TransactionService</code>
+
+
+
+<a href="#sepay.transaction.TransactionService" class="headerlink" title="Permanent link">&para;</a></h3>
+
+    <div class="doc doc-contents ">
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.transaction.TransactionService.get_count" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+<a href="#sepay.transaction.TransactionService.get_count" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;account_number&quot;</span><span class="p">:</span> <span class="s2">&quot;123456789&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transaction_date_min&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transaction_date_max&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-12-31&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;since_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1000&quot;</span>
+<span class="p">}</span>
+<span class="n">transaction_count</span> <span class="o">=</span> <span class="n">transactions</span><span class="o">.</span><span class="n">get_count</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+</code></pre></div>
+<p>Retrieve the count of transactions based on the specified filters. You can filter the results
+using the <code>filters</code> dictionary, which can include the following parameters:</p>
+<ul>
+<li>
+<p><strong>account_number</strong>:
+The bank account number to filter transactions.</p>
+</li>
+<li>
+<p><strong>transaction_date_min</strong>:
+Show transactions created on or after this date (&gt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>transaction_date_max</strong>:
+Show transactions created on or before this date (&lt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>since_id</strong>:
+Show transactions starting from the specified ID (&gt;=).</p>
+</li>
+</ul>
+<p>The <code>filters</code> dictionary allows you to customize your query by including any combination
+of the parameters listed above.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/transaction.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example usage:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    filters = {</span>
+<span class="sd">        &quot;account_number&quot;: &quot;123456789&quot;,</span>
+<span class="sd">        &quot;transaction_date_min&quot;: &quot;2023-01-01&quot;,</span>
+<span class="sd">        &quot;transaction_date_max&quot;: &quot;2023-12-31&quot;,</span>
+<span class="sd">        &quot;since_id&quot;: &quot;1000&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    transaction_count = transactions.get_count(filters=filters)</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    Retrieve the count of transactions based on the specified filters. You can filter the results</span>
+<span class="sd">    using the `filters` dictionary, which can include the following parameters:</span>
+
+<span class="sd">    - **account_number**:</span>
+<span class="sd">    The bank account number to filter transactions.</span>
+
+<span class="sd">    - **transaction_date_min**:</span>
+<span class="sd">    Show transactions created on or after this date (&gt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **transaction_date_max**:</span>
+<span class="sd">    Show transactions created on or before this date (&lt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **since_id**:</span>
+<span class="sd">    Show transactions starting from the specified ID (&gt;=).</span>
+
+<span class="sd">    The `filters` dictionary allows you to customize your query by including any combination</span>
+<span class="sd">    of the parameters listed above.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;transactions/count&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="n">filters</span> <span class="ow">or</span> <span class="p">{}</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;count_transactions&quot;</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.transaction.TransactionService.get_transaction" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">)</span></code>
+
+
+<a href="#sepay.transaction.TransactionService.get_transaction" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Returns the details of a transaction_id.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/transaction.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Transaction</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the details of a transaction_id.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;transactions/details/</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">transaction_id</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">Transaction</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;transaction&quot;</span><span class="p">])</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-method">
+
+
+
+<h4 id="sepay.transaction.TransactionService.get_transactions" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_transactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+<a href="#sepay.transaction.TransactionService.get_transactions" class="headerlink" title="Permanent link">&para;</a></h4>
+
+    <div class="doc doc-contents ">
+
+      <p>Example usage:</p>
+<div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;account_number&quot;</span><span class="p">:</span> <span class="s2">&quot;123456789&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transaction_date_min&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;amount_in&quot;</span><span class="p">:</span> <span class="s2">&quot;100.00&quot;</span>
+<span class="p">}</span>
+<span class="n">transactions</span> <span class="o">=</span> <span class="n">transactions</span><span class="o">.</span><span class="n">get_transactions</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+</code></pre></div>
+<p>Retrieve a list of transactions. You can filter the results using the following parameters
+either directly as method arguments or through the <code>filters</code> dictionary:</p>
+<ul>
+<li>
+<p><strong>account_number</strong>:
+The bank account number to filter transactions.</p>
+</li>
+<li>
+<p><strong>transaction_date_min</strong>:
+Show transactions created on or after this date (&gt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>transaction_date_max</strong>:
+Show transactions created on or before this date (&lt;=). Format: <code>yyyy-mm-dd</code>.</p>
+</li>
+<li>
+<p><strong>since_id</strong>:
+Show transactions starting from the specified ID (&gt;=).</p>
+</li>
+<li>
+<p><strong>limit</strong>:
+Limit the number of transactions returned. Maximum is 5000, default is 5000.</p>
+</li>
+<li>
+<p><strong>reference_number</strong>:
+Retrieve transactions matching the specified reference number.</p>
+</li>
+<li>
+<p><strong>amount_in</strong>:
+Retrieve incoming transactions that match this amount.</p>
+</li>
+<li>
+<p><strong>amount_out</strong>:
+Retrieve outgoing transactions that match this amount.</p>
+</li>
+</ul>
+<p>The <code>filters</code> dictionary can include any of the parameters listed above. You can use either
+individual parameters or the <code>filters</code> dictionary to customize your query.</p>
+
+        <details class="quote">
+          <summary>Source code in <code>sepay/transaction.py</code></summary>
+          <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_transactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Transaction</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example usage:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    filters = {</span>
+<span class="sd">        &quot;account_number&quot;: &quot;123456789&quot;,</span>
+<span class="sd">        &quot;transaction_date_min&quot;: &quot;2023-01-01&quot;,</span>
+<span class="sd">        &quot;amount_in&quot;: &quot;100.00&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">    transactions = transactions.get_transactions(filters=filters)</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    Retrieve a list of transactions. You can filter the results using the following parameters</span>
+<span class="sd">    either directly as method arguments or through the `filters` dictionary:</span>
+
+<span class="sd">    - **account_number**:</span>
+<span class="sd">    The bank account number to filter transactions.</span>
+
+<span class="sd">    - **transaction_date_min**:</span>
+<span class="sd">    Show transactions created on or after this date (&gt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **transaction_date_max**:</span>
+<span class="sd">    Show transactions created on or before this date (&lt;=). Format: `yyyy-mm-dd`.</span>
+
+<span class="sd">    - **since_id**:</span>
+<span class="sd">    Show transactions starting from the specified ID (&gt;=).</span>
+
+<span class="sd">    - **limit**:</span>
+<span class="sd">    Limit the number of transactions returned. Maximum is 5000, default is 5000.</span>
+
+<span class="sd">    - **reference_number**:</span>
+<span class="sd">    Retrieve transactions matching the specified reference number.</span>
+
+<span class="sd">    - **amount_in**:</span>
+<span class="sd">    Retrieve incoming transactions that match this amount.</span>
+
+<span class="sd">    - **amount_out**:</span>
+<span class="sd">    Retrieve outgoing transactions that match this amount.</span>
+
+<span class="sd">    The `filters` dictionary can include any of the parameters listed above. You can use either</span>
+<span class="sd">    individual parameters or the `filters` dictionary to customize your query.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;transactions/list&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="n">filters</span> <span class="ow">or</span> <span class="p">{}</span>
+
+    <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="n">transactions</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;transactions&quot;</span><span class="p">,</span> <span class="p">[])</span>
+
+    <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">get_object</span><span class="p">(</span><span class="n">Transaction</span><span class="p">,</span> <span class="n">transaction</span><span class="p">)</span> <span class="k">for</span> <span class="n">transaction</span> <span class="ow">in</span> <span class="n">transactions</span><span class="p">]</span>
+</code></pre></div>
+        </details>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+
+  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../usage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Usage
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../contributing/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Contributing
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://www.facebook.com/shinzx12" target="_blank" rel="noopener" title="Tweet" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.facebook.com/shinzx12" target="_blank" rel="noopener" title="Facebook" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/shinxz12/sepay" target="_blank" rel="noopener" title="Github" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="mailto:ngocbthe@gmail.com" target="_blank" rel="noopener" title="" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8l-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.18f0862e.min.js"></script>
+      <script src="../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.indexes', 'navigation.instant', 'navigation.tabs.sticky'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
